@@ -15,7 +15,7 @@ public class Operaciones {
     public static void main(String[] args) {
         Scanner tec = new Scanner(System.in);
         int op = 0, indi = 0, fin = 0, op2 = 0;
-        String cadena1 = "", cadena2 = "";
+        String cadena1 = "", cadena2 = "",apoyo = "", cad1 = "", cad2 = "";
         
         System.out.println("BIENVENIDO AL OPERADOR DE CADENAS\n");
         
@@ -31,14 +31,16 @@ public class Operaciones {
                 case 1:
                     
                     System.out.println("Ingreda la cadena para obtener su tamaño: ");
+                    tec.nextLine();
                     cadena1 = tec.nextLine();
-                    System.out.println("El tamaño de la cadena es de: " + cadena1.length() + " caracteres");
+                    System.out.println("El tamaño de la cadena es de: " + cadena1.length() + " caracteres\n");
 
                     break;
                     
                 case 2:
                     
                     System.out.println("Ingreda la cadena para generar una Subcadena");
+                    tec.nextLine();
                     cadena1 = tec.nextLine();
                     System.out.println("Ingresa el índice para generar la Subcadena");
                     indi = tec.nextInt();
@@ -62,7 +64,7 @@ public class Operaciones {
                         
                     }
                     
-                    System.out.println("La Subcadena generada es :" + cadena1.substring(indi, fin+1));
+                    System.out.println("La Subcadena generada es :" + cadena1.substring(indi, fin+1)+"\n");
                     break;
                     
                 case 3:
@@ -75,17 +77,18 @@ public class Operaciones {
                         case 1:
                             
                             System.out.println("Ingresa la primer palabra: ");
+                            tec.nextLine();
                             cadena1 = tec.nextLine();
                             System.out.println("Ingresa la segunda palabra: ");
                             cadena2 = tec.nextLine();
                              
                             if(cadena1.equalsIgnoreCase(cadena2)){
                              
-                               System.out.println("Las palabras " + "'" + cadena1 + "' y " + "'" + cadena2 + "' son iguales");
+                               System.out.println("Las palabras " + "'" + cadena1 + "' y " + "'" + cadena2 + "' son iguales\n");
                              
                             }else{
                              
-                               System.out.println("Las palabras " + "'" + cadena1 + "' y " + "'" + cadena2 + "' no son iguales");
+                               System.out.println("Las palabras " + "'" + cadena1 + "' y " + "'" + cadena2 + "' no son iguales\n");
                              
                             }
                             break;
@@ -93,17 +96,18 @@ public class Operaciones {
                         case 2:
                             
                             System.out.println("Ingresa la primer palabra: ");
+                            tec.nextLine();
                             cadena1 = tec.nextLine();
                             System.out.println("Ingresa la segunda palabra: ");
                             cadena2 = tec.nextLine();
                              
                             if(cadena1 == cadena2){
                              
-                                System.out.println("Las palabras " + "'" + cadena1 + "' y " + "'" + cadena2 + "' son iguales");
+                                System.out.println("Las palabras " + "'" + cadena1 + "' y " + "'" + cadena2 + "' son iguales\n");
                              
                             }else{
                              
-                                System.out.println("Las palabras " + "'" + cadena1 + "' y " + "'" + cadena2 + "' no son iguales");
+                                System.out.println("Las palabras " + "'" + cadena1 + "' y " + "'" + cadena2 + "' no son iguales\n");
                              
                             }
                             break;
@@ -124,19 +128,22 @@ public class Operaciones {
                     switch (op2){
                     
                         case 1:
-                            
+
                             System.out.println("Ingresa la primer cadena: ");
-                            cadena1 = tec.nextLine();
+                            tec.nextLine();
+                            cad1 = tec.nextLine();
                             System.out.println("Ingresa la segunda cadena: ");
-                            cadena2 = tec.nextLine();
+                            cad2 = tec.nextLine();
+                            
+                            
+                            
+                            if(cad1.replace(" ", "").length() == cad2.replace(" ", "").length()){
                              
-                            if(cadena1.trim().length() == cadena2.trim().length()){
-                             
-                               System.out.println("Las cadenas " + "'" + cadena1 + "' y " + "'" + cadena2 + "' son del mismo tamaño, " + cadena1.trim().length() + " caracteres");
+                               System.out.println("Las cadenas " + "'" + cad1 + "' y " + "'" + cad2 + "' son del mismo tamaño, " + cad1.length() + " caracteres\n");
                              
                             }else{
                              
-                               System.out.println("Las cadenas " + "'" + cadena1 + "' y " + "'" + cadena2 + "' no son del mismo tamaño");
+                               System.out.println("Las cadenas " + "'" + cad1 + "' y " + "'" + cad2 + "' no son del mismo tamaño\n");
                              
                             }
                             break;
@@ -144,17 +151,18 @@ public class Operaciones {
                         case 2:
                             
                             System.out.println("Ingresa la primer cadena: ");
-                            cadena1 = tec.nextLine();
+                            tec.nextLine();
+                            cad1 = tec.nextLine();
                             System.out.println("Ingresa la segunda cadena: ");
-                            cadena2 = tec.nextLine();
+                            cad2 = tec.nextLine();
                              
-                            if(cadena1.length() == cadena2.length()){
+                            if(cad1.length() == cad2.length()){
                              
-                                System.out.println("Las cadenas " + "'" + cadena1 + "' y " + "'" + cadena2 + "' son del mismo tamaño, " + cadena1.trim().length() + " caracteres");
+                                System.out.println("Las cadenas " + "'" + cad1 + "' y " + "'" + cad2 + "' son del mismo tamaño, " + cadena1.trim().length() + " caracteres\n");
                              
                             }else{
                              
-                                System.out.println("Las cadenas " + "'" + cadena1 + "' y " + "'" + cadena2 + "' no son del mismo tamaño");
+                                System.out.println("Las cadenas " + "'" + cad1 + "' y " + "'" + cad2 + "' no son del mismo tamaño\n");
                              
                             }
                             break;
