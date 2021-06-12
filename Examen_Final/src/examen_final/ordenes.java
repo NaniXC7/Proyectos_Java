@@ -113,6 +113,8 @@ public class ordenes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         lista = new javax.swing.JComboBox<>();
@@ -120,24 +122,37 @@ public class ordenes extends javax.swing.JFrame {
         selectedpizzas = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         precio = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        descrip = new javax.swing.JTextArea();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        descrip = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         ordenes = new javax.swing.JTable();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel2.setText("ORDENES");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, -1, -1));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examen_final/icons8_create_30px.png"))); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examen_final/icons8_money_30px.png"))); // NOI18N
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, -1, -1));
+
+        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel2.setFont(new java.awt.Font("Gabriola", 3, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("ORDENES");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 190, -1));
+
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel1.setFont(new java.awt.Font("Gabriola", 3, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Sucursal");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 104, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 60, -1));
 
         lista.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -149,9 +164,10 @@ public class ordenes extends javax.swing.JFrame {
                 listaActionPerformed(evt);
             }
         });
-        getContentPane().add(lista, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 102, 95, -1));
+        getContentPane().add(lista, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 95, -1));
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Gabriola", 3, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Pizza");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, -1, -1));
 
@@ -167,40 +183,56 @@ public class ordenes extends javax.swing.JFrame {
         });
         getContentPane().add(selectedpizzas, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 72, -1));
 
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Regresar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, -1, -1));
 
-        precio.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        precio.setBackground(new java.awt.Color(0, 0, 0));
+        precio.setFont(new java.awt.Font("Gabriola", 3, 18)); // NOI18N
+        precio.setForeground(new java.awt.Color(0, 0, 0));
         precio.setText("Precio");
-        getContentPane().add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, -1, -1));
+        getContentPane().add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 190, -1, -1));
 
-        descrip.setColumns(20);
-        descrip.setRows(5);
-        jScrollPane1.setViewportView(descrip);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 195, 290, -1));
-
-        jLabel5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel5.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel5.setFont(new java.awt.Font("Gabriola", 3, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Descripcion");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel6.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel6.setFont(new java.awt.Font("Gabriola", 3, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Q.");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, -1));
 
+        jButton2.setBackground(new java.awt.Color(0, 0, 0));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Ordenar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 240, 90, -1));
 
+        descrip.setBackground(new java.awt.Color(0, 0, 0));
+        descrip.setColumns(20);
+        descrip.setFont(new java.awt.Font("Gabriola", 3, 18)); // NOI18N
+        descrip.setForeground(new java.awt.Color(255, 255, 255));
+        descrip.setRows(5);
+        descrip.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(255, 255, 255)));
+        jScrollPane1.setViewportView(descrip);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 300, 90));
+
+        ordenes.setBackground(new java.awt.Color(0, 0, 0));
+        ordenes.setForeground(new java.awt.Color(255, 255, 255));
         ordenes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -212,9 +244,21 @@ public class ordenes extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        ordenes.setGridColor(new java.awt.Color(255, 255, 255));
+        ordenes.setSelectionBackground(new java.awt.Color(0, 0, 0));
+        ordenes.setSelectionForeground(new java.awt.Color(255, 255, 255));
         jScrollPane2.setViewportView(ordenes);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 311, 390, 109));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 400, 100));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examen_final/icons8_pizza_30px_1.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examen_final/icons8_return_30px.png"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 450, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examen_final/fondo ordenes.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -420,10 +464,15 @@ public class ordenes extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JComboBox<String> lista;
